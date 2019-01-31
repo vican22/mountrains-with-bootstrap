@@ -56,9 +56,49 @@
         border: 2px solid #fff;
       }
 
+      .icon {
+        max-width: 200px;
+        margin: 1% auto;
+      }
+
+      .container {
+        margin: 4% auto;
+      }
+
+      footer {
+        width: 100%;
+        background-color: #5e4485;
+        padding: 3%;
+        color: #fff;
+      }
+
+      .fa {
+        padding: 15px;
+        font-size: 25px;
+        color: #fff;
+      }
+
+      .fa:hover {
+        color: #d5d5d5;
+        text-decoration: none;
+      }
+
+      @media (max-width: 900px) {
+        .fa {
+          font-size: 20px;
+          padding: 10px;
+        }
+      }
       @media (max-width: 600px) {
         .carousel-caption {
           display: none;
+        }
+
+        .icon {
+          max-width: 150px;
+        }
+        h2 {
+          font-size: 1.7em;
         }
       }
     </style>
@@ -135,5 +175,136 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+    <div class="container text-center">
+      <h2>What We're Using</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="./img/html5.png" alt="HTML5" class="icon" />
+          <h4>HTML5</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="./img/bootstrap.png" alt="Bootstrap" class="icon" />
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="./img/css3.png" alt="CSS3" class="icon" />
+          <h4>CSS3</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Here's the cool thing about Bootstrap...</h4>
+          <p>
+            Bootstrap 4 finally drops the support for Internet Explorer 8.
+            That’s really a smart step as it allows them to get rid of pesky
+            polyfills, and convert to relative CSS units. Instead of pixels, the
+            new major release will use REMs and EMs that make it possible to
+            implement responsive typography on Bootstrap sites. This will also
+            increase readability, and make sites more accessible for disabled
+            users.
+          </p>
+
+          <p>
+            Bootstrap has a sophisticated responsive grid system that allows
+            developers to target devices with different viewports. Bootstrap 3
+            currently has 4 grid classes for columns, .col-xs-XX for mobile
+            phones, .col-sm-XX for tablets, .col-md-XX for desktops, and
+            .col-lg-XX for larger desktops. Bootstrap 4 will enhance the grid
+            system with a fifth one that will facilitate developers to target
+            smaller devices under 480px viewport width.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="./img/bootstrap2.jpg"
+            alt="Bootstrap"
+            class="img-responsive"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>Built with Sass</h4>
+          <p>
+            Until now Bootstrap has used LESS as its main CSS prepocessor, but
+            for the new major release, the style rules will be refactored to
+            Sass, which is much more popular among frontend developers, has a
+            huge contributor base, generally easier to use and offers more
+            possibilities. Thanks to the powerful Libsass Sass Complier written
+            in C/C++ Bootstrap 4 will compile much faster than before.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="./img/sass.png" alt="Sass" class="img-responsive" />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>And Less</h4>
+          <p>
+            Bootstrap is made with LESS at its core, a dynamic stylesheet
+            language created by our good friend, Alexis Sellier. It makes
+            developing systems-based CSS faster, easier, and more fun.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="./img/less.png" alt="Less" class="img-responsive" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h4>
+          <a href="#hidden" data-toggle="collapse"
+            >Care to learn more about Bootstrap?</a
+          >
+        </h4>
+        <div class="collapse" id="hidden">
+          <h2>More about Bootstrap</h2>
+          <p>
+            For those who are not so familiar with this star; Twitter Bootstrap
+            is a collection of HTML and CSS tools and templates, which are used
+            for developing and designing a website or web applications. It has
+            been welcomed by the world of web developers with open arms. Here
+            are the features and facts about them that made Twitter Bootstrap a
+            super star.
+          </p>
+          <p>
+            We are always surrounded by desktops, laptops, tablets and
+            smartphones at every hour of the day. Hence, it is crucial to make
+            websites compatible on all the screens and resolutions. Bootstrap’s
+            chameleon-like responsive features provide speedy and efficient
+            transformation of site layout to different forms. It makes the
+            device switching job fun and easy.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Contact Us</h3>
+          <br />
+          <h4>Our address and contact info here</h4>
+        </div>
+        <div class="col-sm-4">
+          <h3>Connect with us</h3>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+        <div class="col-sm-4">
+          <img src="./img/bunny.png" alt="Bunny" class="icon" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
